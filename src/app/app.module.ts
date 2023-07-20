@@ -19,24 +19,24 @@ import { SharedModule } from './shared/shared.module';
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    IconsProviderModule,
-    NzLayoutModule,
-    NzMenuModule,
-    CoreModule,
-    SharedModule
-  ],
-  providers: [
-    { provide: NZ_I18N, useValue: en_US }
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        IconsProviderModule,
+        NzLayoutModule,
+        NzMenuModule,
+        CoreModule,
+        SharedModule
+    ],
+    providers: [
+        { provide: NZ_I18N, useValue: en_US }
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
