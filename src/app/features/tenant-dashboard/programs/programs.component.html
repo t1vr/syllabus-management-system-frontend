@@ -1,0 +1,19 @@
+<div
+    nz-row
+    nzJustify="center"
+    nzAlign="top"
+    [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }"
+    style="margin-top: 10px"
+>
+    <div nz-col class="gutter-row" [nzSpan]="7">
+        <div class="bg-color-white">
+            <app-program-list (onProgramSelected)="onProgramChanges($event)"></app-program-list>
+        </div>
+    </div>
+
+    <div nz-col class="gutter-row" [nzSpan]="14">
+        <div class="bg-color-white">
+            <app-course-list [selectedProgram]="selectedProgram"></app-course-list>
+        </div>
+    </div>
+</div>
