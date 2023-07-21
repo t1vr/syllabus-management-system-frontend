@@ -1,0 +1,13 @@
+<nz-page-header [nzGhost]="false" class="site-page-header" nzBackIcon>
+    <nz-page-header-title>
+        Department of Computer Science & Engineering
+    </nz-page-header-title>
+    <nz-page-header-footer>
+        <nz-tabset [nzSelectedIndex]="0">
+            <nz-tab nzTitle="Overview" (nzClick)="goToOverview()"></nz-tab>
+            <nz-tab nzTitle="Programs" (nzClick)="goToPrograms()"></nz-tab>
+        </nz-tabset>
+    </nz-page-header-footer>
+</nz-page-header>
+
+<router-outlet></router-outlet>
